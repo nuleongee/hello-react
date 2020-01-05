@@ -1,5 +1,7 @@
-.gray-box {
-  background: gray;
-  width: 64px;
-  height: 64px;
+.App {
+  background: black;
+  color: aqua;
+  font-size: 36px;
+  padding: 1rem;
+  font-weight: 600;
 }

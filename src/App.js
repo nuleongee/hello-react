@@ -1,20 +1,19 @@
 import React, { Component, Fragment } from "react";
 // import Hello from "./Hello";
-// import "./App.css";
+import "./App.css";
 
 // 클래스형
 class App extends Component {
   render() {
-    const value = 3;
-
+    // 하이
     return (
       <div>
-        {(function() {
-          if (value === 1) return <div>1이다</div>;
-          if (value === 2) return <div>2이다</div>;
-          if (value === 3) return <div>3이다</div>;
-          return <div>없다</div>;
-        })()}
+        {/* 멀티라인도 예외가 아니다! */}
+        <h1
+          something="asdfg" // 내가 여기에 주석으 쓸꺼야!
+        >
+          리액트
+        </h1>
       </div>
     );
   }
