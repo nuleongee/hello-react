@@ -1,26 +1,42 @@
-import React from 'react'
-import Hello from './Hello'
-import './App.css'
+import React, { Component, Fragment } from "react";
+// import Hello from "./Hello";
+// import "./App.css";
 
-function App () {
-  const name = 'react'
-  const style = {
-    backgroundColor: 'black',
-    color: 'aqua',
-    fontSize: 24,
-    padding: '1rem'
+// 클래스형
+class App extends Component {
+  render() {
+    const value = 3;
+
+    return (
+      <div>
+        {(function() {
+          if (value === 1) return <div>1이다</div>;
+          if (value === 2) return <div>2이다</div>;
+          if (value === 3) return <div>3이다</div>;
+          return <div>없다</div>;
+        })()}
+      </div>
+    );
   }
-  return (
-    <>
-      {/* 주석은 화면에 보이지 않습니다. */}
-      /* 중괄호로 감싸지 않으면 화면에 보입니다 */
-      <Hello
-      //열리는 태그 내부에는 이렇게 주석을 작성 할 수 있습니다.
-      />
-      <div style={style}>{name}</div>
-      <div className='gray-box'></div>
-    </>
-  )
+
+  // 함수형
+  // function App() {
+  //   const name = "react";
+  //   const style = {
+  //     backgroundColor: "black",
+  //     color: "aqua",
+  //     fontSize: 24,
+  //     padding: "1rem"
+  //   };
+  //   return (
+  //     <>
+  //       {/* 주석은 화면에 보이지 않습니다. */}
+  //       <Hello />
+  //       <div style={style}>{name}</div>
+  //       <div className="gray-box"></div>
+  //     </>
+  //   );
+  // }
 }
 
-export default App
+export default App;
