@@ -1,12 +1,13 @@
 import React, { Component, Fragment } from "react";
 // import Hello from "./Hello";
 // import "./App.css";
-import MyName from "./MyName";
+// import MyName from "./MyName";
+import Counter from "./Counter";
 
 // 클래스형
 class App extends Component {
   render() {
-    return <MyName name="lim" />;
+    return <Counter />;
   }
 
   // render() {
