@@ -2,13 +2,40 @@ import React, { Component, Fragment } from "react";
 // import Hello from "./Hello";
 // import "./App.css";
 // import MyName from "./MyName";
-import Counter from "./Counter";
+// import Counter from "./Counter";
+import MyComponent from "./MyComponent";
 
 // 클래스형
 class App extends Component {
-  render() {
-    return <Counter />;
+  state = {
+    counter: 1
+  };
+  constructor(props) {
+    super(props);
+    console.log("constructor");
   }
+  componentDidMount() {
+    console.log("componentDidMount");
+    console.log(this.myDiv.getBoundingClientRect());
+  }
+  handleClick = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    });
+  };
+
+  render() {
+    return (
+      <div ref={ref => (this.myDiv = ref)}>
+        {this.state.counter < 10 && <MyComponent value={this.state.counter} />}
+        <button onClick={this.handleClick}>Click Me</button>
+      </div>
+    );
+  }
+
+  // render() {
+  //   return <Counter />;
+  // }
 
   // render() {
   //   // 하이
