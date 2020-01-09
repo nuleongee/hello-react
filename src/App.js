@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import MyComponent from "./MyComponent";
+import Clean from "./Clean";
 
 // 클래스형
 class App extends Component {
@@ -37,6 +38,7 @@ class App extends Component {
       <div ref={ref => (this.myDiv = ref)}>
         {this.state.counter < 10 && <MyComponent value={this.state.counter} />}
         <button onClick={this.handleClick}>Click Me</button>
+        <Clean />
       </div>
     );
   }
