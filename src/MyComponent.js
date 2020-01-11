@@ -32,7 +32,7 @@ class MyComponent extends Component {
   render() {
     return (
       <div>
-        {this.props.missing.something}
+        {/* {this.props.missing.something} */}
         <p>props: {this.props.value}</p>
         <p>state: {this.state.value}</p>
       </div>
