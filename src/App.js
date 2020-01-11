@@ -3,15 +3,27 @@ import PhoneForm from "./components/PhoneForm";
 
 // 클래스형
 class App extends Component {
+  id = 0;
+
   state = {
-    counter: 1,
-    error: false
+    information: []
+  };
+
+  handleCreate = data => {
+    const { information } = this.state;
+    this.setState({
+      information: information.concat({
+        ...data,
+        id: this.id++
+      })
+    });
   };
 
   render() {
     return (
       <div>
-        <PhoneForm />
+        <PhoneForm onCreate={this.handleCreate} />
+        {JSON.stringify(this.state.information)}
       </div>
     );
   }
