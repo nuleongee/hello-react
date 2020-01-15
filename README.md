@@ -28,7 +28,7 @@ Fragment
 
 [... 전개구문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
-## snippet
+## snippets
 
 rcc: React component class
 
