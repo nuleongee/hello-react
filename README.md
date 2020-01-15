@@ -10,13 +10,9 @@
 
 ![Props](/images/lifecycle.jpg)
 
----
-
 ## JSX
 
 Fragment
-
----
 
 ## JavaScript
 
@@ -32,7 +28,7 @@ Fragment
 
 [... 전개구문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
----
+## snippet
 
 rcc: React component class
 
